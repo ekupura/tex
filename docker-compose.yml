@@ -5,6 +5,6 @@ services:
         hostname: texuser
         container_name: tex
         volumes:
-            -  ./volume:/mnt
+            -  ../graduation-thesis:/mnt/graduation-thesis
         command: bash -c "cd /mnt/graduation-thesis/src && platex main.tex && dvipdfmx main.dvi"
 
